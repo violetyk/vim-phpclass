@@ -6,11 +6,7 @@ let g:loaded_phpclass_vim = 1
 let s:save_cpo = &cpo
 set cpo&vim
 
-let g:phpclass_dir = get(g:, 'phpclass_dir', {
-      \ '/home/yuhei/tmp/test' : 'phpclass#camelize',
-      \ })
-      " \ '/home/yuhei/public_html/symfony/vendor/symfony/symfony/src/Symfony/Component/Console' : 'phpclass#psr0',
-      " \ '/usr/local/php/lib/php' : 'phpclass#pear',
+let g:phpclass_dir = get(g:, 'phpclass_dir', {})
 
 call gf#user#extend('phpclass#gf#find', 1000)
 
