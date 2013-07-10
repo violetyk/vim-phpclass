@@ -36,6 +36,9 @@ endfunction "}}}
 function! phpclass#camelize(file_path, top_directory) "{{{
   return phpclass#util#camelize(fnamemodify(a:file_path, ":t:r"))
 endfunction "}}}
+function! phpclass#capitalize(file_path, top_directory) "{{{
+  return phpclass#util#capitalize(fnamemodify(a:file_path, ":t:r"))
+endfunction "}}}
 
 function! phpclass#jump(...) "{{{
   let split_option = a:1
