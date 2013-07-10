@@ -83,6 +83,19 @@ function! phpclass#util#decamelize(word) " {{{
   return result
 
 endfunction "}}}
+function! phpclass#util#capitalize(word) " {{{
+
+  let word = a:word
+  if word == ''
+    return word
+  endif
+
+  let result = toupper(word[0]) . tolower(word[1:])
+
+  " To Capitalize
+  return result
+endfunction
+" }}}
 
 function! phpclass#util#singularize(word) " {{{
 " rails.vim(http://www.vim.org/scripts/script.php?script_id=1567)
